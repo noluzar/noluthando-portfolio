@@ -6,14 +6,14 @@ import Skills from './Skills';
 
 const Profile = () => {
     return (
-        <div className='bg-[var(--primary-color)] w-full rounded-md'>
+        <div className='bg-[var(--primary-color)] w-full rounded-lg'>
             <div className='p-6 py-8'>
                 <div className='flex justify-between items-center '>
                     <div className='flex items-center space-x-2 text-[var(--text-color)] text-lg font-semibold'>
                         <GoDotFill className=' text-gray-400 size-3' />
                         <p className='text-xl'>Software Developer</p>
                     </div>
-                    <div className='flex items-center space-x-2 bg-green-200 p-1 rounded-full text-[10px] text-green-900 font-semibold cursor-pointer'>
+                    <div className='flex items-center space-x-2 bg-green-200 p-1 rounded-full text-[12px] text-green-900 font-semibold cursor-pointer'>
                         <GoDotFill className='text-green-600' />
                         <p>AVAILABLE FOR WORK</p>
                     </div>

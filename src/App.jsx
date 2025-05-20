@@ -3,7 +3,7 @@ import MainLayout from './layouts/MainLayout'
 
 const App = () => {
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-[#F0F0F0]'>
       <MainLayout/>
     </div>
   )

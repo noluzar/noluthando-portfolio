@@ -24,16 +24,16 @@ const ProjectCards = ({ imageSrc, projectName, techStack }) => {
 
 const SkillsCard = ({ imageSrc, skillName }) => {
   return (
-    <div className="flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-2 text-lg text-[var(--text-color)]">
-      <div className="p-1 max-w-[60%]">
+    <div className="flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-2 text-lg">
+      <div className="p-1 max-w-[55%]">
         <div className="flex items-center space-x-8">
           <img
             src={imageSrc}
             alt={skillName}
-            className="rounded-full w-[15%] object-cover p-1 bg-gray-100"
+            className="rounded-full w-[15%] object-cover p-1 bg-gray-50"
           />
           <div className="space-y-1">
-            <h2 className="text-xl font-semibold">{skillName}</h2>
+            <h2 className="text-xl">{skillName}</h2>
           </div>
         </div>
       </div>
