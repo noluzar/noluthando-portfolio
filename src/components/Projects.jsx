@@ -2,11 +2,12 @@ import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { GoDotFill } from "react-icons/go";
+import {ProjectCards} from './Cards'
 
 const Projects = () => {
   return (
-    <div className='bg-gray-200 p-6 space-y-2 rounded-md mx-2'>
-      <div className='flex justify-between items-center'>
+    <div className='bg-gray-200 p-6 space-y-2 rounded-md'>
+      <div className='flex justify-between items-center pb-6'>
         <div className='flex items-center space-x-1'>
           <GoDotFill className='text-gray-400 size-3' />
           <p className='text-lg font-semibold'>Projects</p>
@@ -16,32 +17,21 @@ const Projects = () => {
           <FaArrowRight />
         </div>
       </div>
-      <div className='flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-4 text-lg'>
-        <div className='flex items-center'>
-            <img
-            src='./2.png'
-            className='rounded-full w-[15%]'
-             />
-          <div className='space-y-2'>
-            <h2>Project Name</h2>
-            <p>HTML, Tailwind, React, JavaScript</p>
-          </div>
-        </div>
-        <IoIosArrowForward size={25} />
-      </div>
-      <div className='flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md text-lg'>
-        <div className='flex items-center'>
-            <img
-            src='./2.png'
-            className='rounded-full w-[15%]'
-             />
-          <div className='space-y-2'>
-            <h2>Project Name</h2>
-            <p>HTML, Tailwind, React, JavaScript</p>
-          </div>
-        </div>
-        <IoIosArrowForward />
-      </div>
+      <ProjectCards
+        imageSrc="./2.png"
+        projectName="Portfolio Website"
+        techStack="HTML, Tailwind, React, JavaScript"
+      />
+       <ProjectCards
+        imageSrc="./2.png"
+        projectName="Portfolio Website"
+        techStack="HTML, Tailwind, React, JavaScript"
+      />
+       <ProjectCards
+        imageSrc="./2.png"
+        projectName="Portfolio Website"
+        techStack="HTML, Tailwind, React, JavaScript"
+      />
     </div>
   )
 }

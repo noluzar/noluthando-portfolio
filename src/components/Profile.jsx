@@ -1,13 +1,13 @@
 import React from 'react'
-import { FaRegCopy } from "react-icons/fa6";
-import { IoIosAddCircleOutline } from "react-icons/io";
 import { GoDotFill } from "react-icons/go";
+import { CopyButton, HireMeButton } from './Buttons';
 import Projects from './Projects';
+import Skills from './Skills';
 
 const Profile = () => {
     return (
-        <div className='bg-[var(--primary-color)] mt-22 w-[35%] rounded-md'>
-            <div className='p-6 py-8 mx-2'>
+        <div className='bg-[var(--primary-color)] w-full rounded-md'>
+            <div className='p-6 py-8'>
                 <div className='flex justify-between items-center '>
                     <div className='flex items-center space-x-2 text-gray-600 text-lg font-semibold'>
                         <GoDotFill className=' text-gray-400 size-3' />
@@ -26,14 +26,8 @@ const Profile = () => {
                         <div>
                         </div>
                         <div className='space-x-4 pt-4 flex items-center'>
-                            <div className='p-2 flex items-center space-x-2 bg-black text-white cursor-pointer rounded-md text-sm'>
-                                <IoIosAddCircleOutline />
-                                <button>Hire me</button>
-                            </div>
-                            <div className='bg-gray-300 p-2 flex items-center space-x-2 cursor-pointer rounded-md text-sm'>
-                                <FaRegCopy />
-                                <button>Copy Email</button>
-                            </div>
+                            <HireMeButton onClick={() => alert("Let's work together!")} />
+                            <CopyButton onClick={() => console.log("Copied!")} />
                         </div>
                     </div>
                     <div className='w-[50%] rounded-full bg-gray-400'>
@@ -44,7 +38,6 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            <Projects />
         </div>
     )
 }
