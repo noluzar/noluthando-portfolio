@@ -6,7 +6,7 @@ const HireMeButton = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="p-2 flex items-center space-x-2 bg-black text-white cursor-pointer rounded-md text-sm hover:bg-gray-800 transition"
+            className="p-2 font-light flex items-center space-x-2 bg-black text-white cursor-pointer rounded-md text-sm hover:bg-gray-800 transition"
         >
             <IoIosAddCircleOutline size={18} />
             <span>Hire me</span>
@@ -18,7 +18,7 @@ const CopyButton = ({ onClick, label = "Copy Email" }) => {
     return (
         <button
             onClick={onClick}
-            className="bg-gray-300 p-2 flex items-center space-x-2 cursor-pointer rounded-md text-sm hover:bg-gray-400 transition"
+            className="shadow-gray-400 shadow p-2 flex items-center space-x-2 cursor-pointer rounded-md text-sm hover:bg-gray-400 transition"
         >
             <FaRegCopy size={16} />
             <span>{label}</span>

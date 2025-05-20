@@ -3,8 +3,8 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const ProjectCards = ({ imageSrc, projectName, techStack }) => {
   return (
-    <div className="flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-2 text-lg">
-      <div className="p-3 max-w-md mx-auto">
+    <div className="flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-2 text-lg text-[var(--text-color)]">
+      <div className="p-2 max-w-md mx-auto">
         <div className="flex items-center space-x-4">
           <img
             src={imageSrc}
@@ -13,7 +13,7 @@ const ProjectCards = ({ imageSrc, projectName, techStack }) => {
           />
           <div className="space-y-1">
             <h2 className="text-lg font-semibold">{projectName}</h2>
-            <p className="">{techStack}</p>
+            <p className="font-light text-sm">{techStack}</p>
           </div>
         </div>
       </div>
@@ -24,16 +24,16 @@ const ProjectCards = ({ imageSrc, projectName, techStack }) => {
 
 const SkillsCard = ({ imageSrc, skillName }) => {
   return (
-    <div className="flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-2 text-lg">
-      <div className="p-3 max-w-md mx-auto">
-        <div className="flex items-center space-x-4">
+    <div className="flex justify-between items-center bg-[var(--primary-color)] p-2 rounded-md mt-2 text-lg text-[var(--text-color)]">
+      <div className="p-1 max-w-[60%]">
+        <div className="flex items-center space-x-8">
           <img
             src={imageSrc}
             alt={skillName}
-            className="rounded-full w-[15%] object-cover"
+            className="rounded-full w-[15%] object-cover p-1 bg-gray-100"
           />
           <div className="space-y-1">
-            <h2 className="text-lg font-semibold">{skillName}</h2>
+            <h2 className="text-xl font-semibold">{skillName}</h2>
           </div>
         </div>
       </div>

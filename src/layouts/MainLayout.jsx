@@ -12,7 +12,7 @@ const MainLayout = () => {
             <div className='pb-26'>
                 <Navbar />
             </div>
-            <div className='bg-white w-[35%] px-2 space-y-1 rounded-md flex flex-col items-cente'>
+            <div className='bg-white w-[35%] px-2 space-y-2 rounded-md flex flex-col items-cente'>
                 <Profile />
                 <Projects />
                 <Skills />

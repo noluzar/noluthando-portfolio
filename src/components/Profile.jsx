@@ -9,7 +9,7 @@ const Profile = () => {
         <div className='bg-[var(--primary-color)] w-full rounded-md'>
             <div className='p-6 py-8'>
                 <div className='flex justify-between items-center '>
-                    <div className='flex items-center space-x-2 text-gray-600 text-lg font-semibold'>
+                    <div className='flex items-center space-x-2 text-[var(--text-color)] text-lg font-semibold'>
                         <GoDotFill className=' text-gray-400 size-3' />
                         <p className='text-xl'>Software Developer</p>
                     </div>
@@ -19,8 +19,8 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className='py-4 space-y-4 flex items-center space-x-20 pt-10'>
-                    <div className='text-lg'>
-                        <h1 className='text-[34px] font-bold'>I'm Noluthando Ndlovu</h1>
+                    <div className='text-lg font-light'>
+                        <h1 className='text-[34px] font-semibold text-[var(--accent-color)]'>I'm Noluthando Ndlovu</h1>
                         <p>Software Developer from Johannesburg, South Africa.</p>
                         <p>Currently a Learner at CAPACITI</p>
                         <div>
