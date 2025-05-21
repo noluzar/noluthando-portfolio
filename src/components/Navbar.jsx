@@ -8,7 +8,7 @@ import { HireMeButton } from './Buttons';
 
 const Navbar = () => {
     return (
-        <nav className='flex justify-between p-6 mt-2 bg-[var(--primary-color)] rounded-xl fixed w-[35%]'>
+        <nav className='flex justify-between p-4 mt-2 bg-[var(--primary-color)] rounded-xl fixed w-[560px]'>
             <div className='flex items-center space-x-6'>
                 <RiHome6Line className='size-6 text-gray-500' />
                 <CgProfile className='size-6 text-gray-500' />
