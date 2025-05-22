@@ -8,11 +8,11 @@ import Socials from '../components/Socials'
 
 const MainLayout = () => {
     return (
-        <div className='flex flex-col items-cente'>
-            <div className='pb-22 w-full flex flex-col items-cente'>
+        <div className='flex flex-col items-center bg-[var(--background)]'>
+            <div className='pb-22 w-full flex flex-col items-center'>
                 <Navbar />
             </div>
-            <div className='bg-white w-[560px] px-2 space-y-2 rounded-xl flex flex-col items-cente'>
+            <div className='bg-white w-[560px] pt-8 p-2 space-y-2 rounded-xl flex flex-col items-center'>
                 <Profile />
                 <Projects />
                 <Skills />

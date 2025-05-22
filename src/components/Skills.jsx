@@ -8,7 +8,7 @@ const Skills = () => {
       <div className='flex justify-between items-center pb-6'>
         <div className='flex items-center space-x-1 '>
           <GoDotFill className='text-gray-400 size-3' />
-          <p className='text-lg font-semibold'>Skills</p>
+          <p className='text-xl font-semibold text-[var(--text-color)]'>Skills</p>
         </div>
       </div>
       <SkillsCard

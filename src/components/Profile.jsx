@@ -1,15 +1,13 @@
 import React from 'react'
 import { GoDotFill } from "react-icons/go";
 import { CopyButton, HireMeButton } from './Buttons';
-import Projects from './Projects';
-import Skills from './Skills';
 
 const Profile = () => {
     return (
-        <div className='bg-[var(--primary-color)] w-full rounded-lg'>
-            <div className='p-6 py-8'>
-                <div className='flex justify-between items-center '>
-                    <div className='flex items-center space-x-2 text-[var(--text-color)] text-lg font-semibold'>
+        <div className='w-full rounded-lg'>
+            <div className=''>
+                <div className='flex justify-between items-center px-6'>
+                    <div className='flex items-center space-x-2 text-[var(--text-color)] font-semibold'>
                         <GoDotFill className=' text-gray-400 size-3' />
                         <p className='text-xl'>Software Developer</p>
                     </div>
@@ -18,7 +16,7 @@ const Profile = () => {
                         <p>AVAILABLE FOR WORK</p>
                     </div>
                 </div>
-                <div className='py-4 space-y-4 flex items-center space-x-20 pt-10'>
+                <div className='flex items-center space-x-20 py-10 px-6'>
                     <div className='text-lg font-light'>
                         <h1 className='text-[34px] font-semibold text-[var(--accent-color)]'>I'm Noluthando Ndlovu</h1>
                         <p>Software Developer from Johannesburg, South Africa.</p>
